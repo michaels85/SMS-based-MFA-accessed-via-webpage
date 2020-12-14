@@ -1,6 +1,10 @@
 <?php
-    //  Author: Michael Szczur <michael@szczur.com>
+    //  Author: User <user@domain.com>
     //  above line required to be retained.  Please send updates/improvements.
+
+    // things to do
+        // move from XmlHttpRequest to fetch()
+        // add listeners
 
     /*  Your oganization is using Microsoft 365 and decides to use SMS-based MFA.  But this requires users to own a phone, it
         has power, signal, and can receive SMS messages.   Rather, each user's profile contains an SMS number from a provider
@@ -31,7 +35,7 @@
 
     // sqlite3 database filename and encryption strinblueTableg
     $dbFileName = 'Microsoft365MFAcodes.db';
-    $dbPhrase = 'The quick brown fox jumped over the lazy dog.';
+    $dbPhrase = 'Enter a pass phrase here.';
 
     // if necessary create, and open the database with RW access
     $dbHandle = new SQLite3($dbFileName, SQLITE3_OPEN_CREATE | SQLITE3_OPEN_READWRITE, $dbPhrase) or die('Unable to open database');
